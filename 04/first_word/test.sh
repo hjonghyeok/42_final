@@ -19,7 +19,7 @@ for i in "${!tests[@]}"; do
     fi
 done
 
-./a.out "a" "b" | cat -e > "output4"
+ ./a.out "a" "b" | cat -e > "output4"
 
 if diff -c "output4" "${answers}/answer4" > /dev/null; then
     echo -e "test4 \033[0;32mOK:)\033[0m"
